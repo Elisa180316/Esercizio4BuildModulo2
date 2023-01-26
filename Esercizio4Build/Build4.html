@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const marco = {
+        name: 'Marco',
+        lastName: 'Rossi',
+        isAmbassador: true,
+      }
+      
+      const paul = {
+        name: 'Paul',
+        lastName: 'Flynn',
+        isAmbassador: false,
+      }
+      
+      const amy = {
+        name: 'Amy',
+        lastName: 'Reed',
+        isAmbassador: false,
+      }
+      
+      const prices = [34, 5, 2]
+      const shippingCost = 50
+      
+     let total = 0;
+     for (const price of prices) {
+      total += price     }
+      if (total > 100) {
+        shippingCost = 0;
+      }
+      if (amy.isAmbassador){
+        console.log(total);
+        total -= total * 30 + shippingCost
+      } else {
+        total += shippingCost;
+      }
+      console.log(total);
+    </script>
+</body>
+</html>
